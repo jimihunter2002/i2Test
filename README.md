@@ -1,4 +1,4 @@
-# MMT Digital
+# i2Test
 
 ## To run the tests in this project follow the instructions below
 
