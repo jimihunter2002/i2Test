@@ -1,0 +1,16 @@
+{
+  "name": "sort_engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yusuf ogunjimi",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test":"jest --verbose --runInBand --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
