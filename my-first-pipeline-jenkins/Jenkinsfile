@@ -7,16 +7,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-                sh 'cat /etc/passwd'
-                sh 'apk add sudo'
-                sh 'npm --version'
-                sh 'ls -lhrt /usr/local/bin/npm'
-                git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
-                sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
-                sh 'ls -a'
-                sh 'npm list -g'
-                sh 'sudo chown -R 117:126 /usr/local/bin/npm'
-                sh 'npm install'
+                
             }
         }
     }
