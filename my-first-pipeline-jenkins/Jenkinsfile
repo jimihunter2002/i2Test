@@ -9,7 +9,7 @@ pipeline {
                 sh 'node --version'
                 sh 'cat /etc/passwd'
                 sh 'npm --version'
-                sh 'which npm'
+                sh 'ls -lhrt /usr/local/bin/npm'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
                 sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
                 sh 'ls -a'
