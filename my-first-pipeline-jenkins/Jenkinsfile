@@ -8,7 +8,8 @@ pipeline {
             steps {
                 sh 'node --version'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
-                sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline && npm install'
+                sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
+                sh 'npm install'
             }
         }
     }
