@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'cat /etc/passwd'
+                sh 'apk add sudo'
                 sh 'npm --version'
                 sh 'ls -lhrt /usr/local/bin/npm'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
