@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'cat /etc/passwd'
+                sh 'npm --version'
                 sh 'whoami'
                 sh 'sudo chown -R 117:126 /.npm'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
