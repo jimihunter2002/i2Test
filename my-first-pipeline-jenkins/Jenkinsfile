@@ -9,7 +9,7 @@ pipeline {
                 sh 'node --version'
                 sh 'cat /etc/passwd'
                 sh 'npm --version'
-                sh ' sudo chown -R 117:126 "/.npm"'
+                sh 'sudo chown -R 117:126 ~/.npm'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
                 sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
                 sh 'npm install'
