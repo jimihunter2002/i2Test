@@ -14,7 +14,7 @@ pipeline {
                 sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
                 sh 'ls -a'
                 sh 'npm list -g'
-                sh 'chown -R 117:126 "~/.npm"'
+                sh 'chown -R 117:126 /usr/local/bin/npm'
                 sh 'npm install'
             }
         }
