@@ -7,6 +7,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
+                sh 'sudo chown -R $(whoami) ~/.npm'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
                 sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
                 sh 'npm install'
