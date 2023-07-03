@@ -9,13 +9,10 @@ pipeline {
                 sh 'node --version'
                 sh 'cat /etc/passwd'
                 sh 'npm --version'
-                sh 'docker ps -a'
-                sh 'docker exec -it --user root'
-                sh 'apt-get install sudo -y'
-                sh 'usermod -aG sudo devops'
                 sh 'cat /etc/passwd'
                 git branch: 'jenkins-branch', url: 'https://github.com/jimihunter2002/i2Test'
                 sh 'cd /var/lib/jenkins/workspace/jimi-first-pipeline'
+                sh 'ls -a'
                 sh 'npm install'
             }
         }
