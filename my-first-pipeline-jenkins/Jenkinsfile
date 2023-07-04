@@ -7,8 +7,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-                sh 'export HOME=/tmp'
-                sh 'npm config set cache /tmp'
+                sh 'npm install -g npm'
                 sh 'cd /var/lib/jenkins/workspace/'
                 sh 'npm install'
                 
