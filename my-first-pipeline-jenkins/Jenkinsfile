@@ -7,6 +7,10 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
+                sh 'export HOME=/tmp'
+                sh 'npm config set cache /tmp'
+                sh 'cd /var/lib/jenkins/workspace/'
+                sh 'npm install'
                 
             }
         }
