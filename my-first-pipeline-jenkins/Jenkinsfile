@@ -7,8 +7,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-                sh 'whoami'
                 sh 'echo $USER'
+                sh 'whoami'                
                 sh 'mkdir -p ~/.npm-global'
                 sh ''
                 sh 'npm config set prefix "~/.npm-global"'
